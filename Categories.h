@@ -10,4 +10,6 @@
 
 @interface Categories : UIViewController
 @property(nonatomic) NSString *chosen;
+@property NSNumber *teamOnePoints;
+@property NSNumber *teamTwoPoints;
 @end

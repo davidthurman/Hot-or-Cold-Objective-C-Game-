@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(@"%@", self.teamOnePoints);
+    NSLog(@"%@", self.teamTwoPoints);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,6 +37,14 @@
 }
 */
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if (self.teamOnePoints != NULL) {
+        mainGame *controller = (mainGame *)segue.destinationViewController;
+        controller.teamOnePoints = self.teamOnePoints;
+    }
+    if (self.teamTwoPoints != NULL) {
+        mainGame *controller = (mainGame *)segue.destinationViewController;
+        controller.teamTwoPoints = self.teamTwoPoints;
+    }
     if([segue.identifier isEqualToString:@"foodChosen"]){
         self.chosen = @"food";
         mainGame *controller = (mainGame *)segue.destinationViewController;

@@ -358,6 +358,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="changeCategory:" destination="YTO-t9-3d9" eventType="touchUpInside" id="sqE-Jk-qcZ"/>
                                     <segue destination="Zcz-y7-epS" kind="modal" id="iLh-8V-M5u"/>
                                 </connections>
                             </button>
@@ -400,6 +401,9 @@
                                 <state key="normal" title="Click here to play">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="playButton:" destination="YTO-t9-3d9" eventType="touchUpInside" id="BxC-oA-8gT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.28627450980392155" green="0.69411764705882351" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
@@ -407,6 +411,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="playLabel" destination="2YI-BB-ebI" id="DWS-7G-0NI"/>
                         <outlet property="teamOneCurrentScore" destination="kJ2-xZ-2sl" id="Gii-mE-mVx"/>
                         <outlet property="teamTwoCurrentScore" destination="sqc-De-aAT" id="0aN-vV-als"/>
                     </connections>
@@ -417,7 +422,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aJ0-7P-gc9"/>
+        <segue reference="sPY-Ra-DE1"/>
         <segue reference="iLh-8V-M5u"/>
     </inferredMetricsTieBreakers>
 </document>
