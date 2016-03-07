@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
-@interface mainGame : UIViewController
+@interface mainGame : UIViewController{
+    SystemSoundID clickedSound;
+    SystemSoundID plusPoint;
+    SystemSoundID timer;
+}
+
 @property(nonatomic) NSString *chosen;
 @property(nonatomic) NSMutableArray *pickedCategory;
 @property(nonatomic) NSArray *movieArray;
@@ -17,6 +23,8 @@
 @property(nonatomic) NSArray *sportsArray;
 @property(nonatomic) NSArray *musicArray;
 @property(nonatomic) NSArray *kidsArray;
+@property NSNumber *timerOn;
+@property NSNumber *startGame;
 @property NSNumber *teamOnePoints;
 @property NSNumber *teamTwoPoints;
 @property (strong, nonatomic) IBOutlet UILabel *teamOneCurrentScore;

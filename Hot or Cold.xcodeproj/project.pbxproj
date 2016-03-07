@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32C597341C76341200C4AABA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C597331C76341200C4AABA /* AudioToolbox.framework */; };
+		32C597361C7635C500C4AABA /* clickBeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32C597351C7635C500C4AABA /* clickBeep.wav */; };
+		32C597381C763A8100C4AABA /* plusPoint.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32C597371C763A8100C4AABA /* plusPoint.wav */; };
+		32C5973A1C76499F00C4AABA /* timer.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32C597391C76499F00C4AABA /* timer.wav */; };
 		32C5E2DE1C6860C70044D6B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C5E2DD1C6860C70044D6B1 /* main.m */; };
 		32C5E2E31C68614F0044D6B1 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C5E2E01C68614F0044D6B1 /* Game.m */; };
 		32C5E2E41C68614F0044D6B1 /* mainGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C5E2E21C68614F0044D6B1 /* mainGame.m */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32C597331C76341200C4AABA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		32C597351C7635C500C4AABA /* clickBeep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clickBeep.wav; sourceTree = "<group>"; };
+		32C597371C763A8100C4AABA /* plusPoint.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = plusPoint.wav; sourceTree = "<group>"; };
+		32C597391C76499F00C4AABA /* timer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = timer.wav; sourceTree = "<group>"; };
 		32C5E2DD1C6860C70044D6B1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32C5E2DF1C68614F0044D6B1 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		32C5E2E01C68614F0044D6B1 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
@@ -42,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C597341C76341200C4AABA /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +60,9 @@
 		32C5E2E81C6862420044D6B1 /* Custom View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				32C597391C76499F00C4AABA /* timer.wav */,
+				32C597371C763A8100C4AABA /* plusPoint.wav */,
+				32C597351C7635C500C4AABA /* clickBeep.wav */,
 				32C5E2E11C68614F0044D6B1 /* mainGame.h */,
 				32C5E2E21C68614F0044D6B1 /* mainGame.m */,
 				32C5E2EC1C68F1D60044D6B1 /* Categories.h */,
@@ -62,6 +74,7 @@
 		32E6D03B1C6823E400E0EBEF = {
 			isa = PBXGroup;
 			children = (
+				32C597331C76341200C4AABA /* AudioToolbox.framework */,
 				32C5E2E81C6862420044D6B1 /* Custom View Controllers */,
 				32E6D0461C6823E400E0EBEF /* Hot or Cold */,
 				32E6D0451C6823E400E0EBEF /* Products */,
@@ -153,8 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				32E6D0571C6823E400E0EBEF /* LaunchScreen.storyboard in Resources */,
+				32C597361C7635C500C4AABA /* clickBeep.wav in Resources */,
+				32C597381C763A8100C4AABA /* plusPoint.wav in Resources */,
 				32E6D0541C6823E400E0EBEF /* Assets.xcassets in Resources */,
 				32E6D0521C6823E400E0EBEF /* Main.storyboard in Resources */,
+				32C5973A1C76499F00C4AABA /* timer.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +301,7 @@
 				INFOPLIST_FILE = "Hot or Cold/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.DavidThurman.HotCold.Hot-or-Cold";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DavidThurman.HotOrCold;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -300,7 +316,7 @@
 				INFOPLIST_FILE = "Hot or Cold/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.DavidThurman.HotCold.Hot-or-Cold";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DavidThurman.HotOrCold;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

@@ -41,6 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Hot or Cold Splash" width="341" height="256"/>
+        <image name="Hot or Cold Splash" width="266" height="200"/>
     </resources>
 </document>
